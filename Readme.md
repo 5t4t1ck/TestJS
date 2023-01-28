@@ -1,28 +1,57 @@
 
 Variables y operaciones
-1. Responde las siguientes preguntas:
 
-    ¿Qué es una variable y para qué sirve?
-    ¿Cuál es la diferencia entre declarar e inicializar una variable?
-    ¿Cuál es la diferencia entre sumar números y concatenar strings?
-    ¿Cuál operador me permite sumar o concatenar?
+# Responde las siguientes preguntas:
+
+    1. ¿Qué es una variable y para qué sirve?
+
+    * Espacio en memoria que podemos guardar información, depende del tipo y estructura de datos que soporte el lenguaje de programación donde se esté utilizando.
+
+    2. ¿Cuál es la diferencia entre declarar e inicializar una variable?
+
+    * Declarar es crear una variable e inizializar es asignarle un valor.
+    
+    3. ¿Cuál es la diferencia entre sumar números y concatenar strings?
+
+    * Incrementar el valor de las variables y concatenar es unir cadenas de caracteres.
+
+    4. ¿Cuál operador me permite sumar o concatenar?
+
+    * El operador que nos permite sumar o concatenar es "+". Este operador nos permite sumar números cuando lo usamos con números. Pero cuando los strings, lo que hace es unir (concatenar) ambos strings.
 
 2. Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
 
-    Nombre
-    Apellido
-    Nombre de usuario de Abacom
-    Edad
-    Correo electrónico
-    Mayor de edad
-    Dinero ahorrado
-    Deudas
+    * Nombre: string
+    * Apellido: string
+    * Nombre de usuario de Abacom: string (@statick_ds)
+    * Edad: number
+    * Correo electrónico string (dsaavedra88@gmail.com)
+    * Mayor de edad: boolean
+    * Dinero ahorrado: number
+    * Deudas: number
 
 3. Traduce a código JavaScript las variables del ejemplo anterior.
+
+````
+let nombre = "Milton";
+let apellido = "Labanda";
+let username = "mlabanda";
+let edad = 35;
+let email = "dsaavedra88@gmail.com";
+let esMayorDeEdad = true;
+let dineroAhorrado = 1000;
+let deudas = 200;
+````
+
 4. Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
 
     Nombre completo (nombre y apellido)
     Dinero real (dinero ahorrado menos deudas)
+
+````
+let nombreCompleto = nombre + " " + apellido;
+let saldoIgual = dineroAhorrado - deudas;
+````
 
 Funciones
 1. Responde las siguientes preguntas:
