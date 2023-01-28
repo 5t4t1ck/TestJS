@@ -53,22 +53,45 @@ let nombreCompleto = nombre + " " + apellido;
 let saldoIgual = dineroAhorrado - deudas;
 ````
 
-Funciones
-1. Responde las siguientes preguntas:
+# Funciones.
 
-    ¿Qué es una función?
-    ¿Cuándo me sirve usar una función en mi código?
-    ¿Cuál es la diferencia entre parámetros y argumentos de una función?
+## Responde las siguientes preguntas:
+
+1. ¿Qué es una función?
+
+* Las funciones nos permiten encapsular (guardar) bloques de código para ser reutilizaods y ejecutados en el futuro.
+
+2. ¿Cuándo me sirve usar una función en mi código?
+
+* Nos sirve cuando tenemos variables o bloques de código muy parecidos (con camb ios que podrían ser parámetros y argumentos) que podemos encapsular para reutilziar más de una vez en el futuro.
+
+3. ¿Cuál es la diferencia entre parámetros y argumentos de una función?
+
+* Las funciones reciben parámetros cuando las creamos. Y les enviamos argumentos cuando las ejecutamos.
 
 2. Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
 
-const name = "Juan David";
-const lastname = "Castro Gallego";
-const completeName = name + lastname;
-const nickname = "juandc";
+````
+const name = "Diego";
+const lastname = "Saavedra";
+const completename = name + lastname;
+const nick = "statick";
 
-console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nick + ".");
+````
+````
+function nombreCompleto(name, lastName) {
+    return name + " " + lastName;
+}
 
+function saludo(name, lastname, username) {
+    const completeName = nombreCompleto(name, lastname);
+    console.log("Mi nombre es " + completeName +", pero prefiero que me digas " + username + "·");
+}
+
+saludo(name, lastname, nick);
+
+````
 Condicionales
 1. Responde las siguientes preguntas:
 
