@@ -92,15 +92,24 @@ function saludo(name, lastname, username) {
 saludo(name, lastname, nick);
 
 ````
-Condicionales
-1. Responde las siguientes preguntas:
+# Condicionales
+## Responde las siguientes preguntas:
 
-    ¿Qué es un condicional?
-    ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
-    ¿Puedo combinar funciones y condicionales?
+1. ¿Qué es un condicional?
 
-2. Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
+* Son la forma en que ejecutamos un bloque de código u otro dependiendo de alguna condición o validación.
 
+2. ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+
+* If (else y else if): El condicional if (con else y elseif) nos permite hacer validaciones completamente distintas (si asi lo deseamos) en cada validación o condiconal.
+* Switch: La sentencia switch en todos los cases se comparan con la misma variable o condición que definimos en el switch.
+
+3. ¿Puedo combinar funciones y condicionales?
+
+* Sí, las funciones pueden encapsular cualquier bloque de código, incluyendo los condicionales.
+
+4. Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
+````
 const tipoDeSuscripcion = "Basic";
 
 switch (tipoDeSuscripcion) {
@@ -117,9 +126,50 @@ switch (tipoDeSuscripcion) {
        console.log("Tú y alguien más pueden tomar TODOS los cursos de Abacom durante un año");
        break;
 }
+````
+
+````
+if (tipoDeSuscripcion == "Free") {
+    console.log("Solo puedes tomar los cursos gratis");
+} else if (tipoDeSuscripcion == "Basic") {
+    console.log("Puedes tomar casi todos los cursos de Abacom durante un mes");
+} else if (tipoDeSuscripcion == "Expert") {
+    console.log("Puedes tomar casi todos los cursos de Abacom durante un año");
+} else if (tipoDeSuscripcion == "ExpertPlus") {
+    console.log("Tú y alguien más pueden tomar TODOS los cursos de Abacom durante un año");
+} else {
+    console.log("No existe ese tipo de suscripción");
+}
+
+````
 
 3. Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
-Ciclos
+Ciclos.
+
+
+````
+if (tipoDeSuscripcion == "Free") {
+    console.log("Solo puedes tomar los cursos gratis");
+    }
+if (tipoDeSuscripcion == "Basic"){
+    console.log("Puedes tomar casi todos los cursos de Abacom durante un mes");
+}
+if (tipoDeSuscripcion == "Basic") {
+    console.log("Puedes tomar casi todos los cursos de Abacom durante un mes");
+} 
+if (tipoDeSuscripcion == "Expert") {
+    console.log("Puedes tomar casi todos los cursos de Abacom durante un año");
+} 
+if (tipoDeSuscripcion == "ExpertPlus") {
+    console.log("Tú y alguien más pueden tomar TODOS los cursos de Abacom durante un año");
+} 
+if !(tipoDeSuscripcion == "Free") || !(tipoDeSuscripcion == "Basic") || !(tipoDeSuscripcion == "Expert") || (tipoDeSuscripcion == "ExpertPlus") {
+    console.log("No existe ese tipo de suscripción");
+}
+
+````
+
+
 1. Responde las siguientes preguntas
 
     ¿Qué es un ciclo?
