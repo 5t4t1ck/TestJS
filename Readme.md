@@ -77,7 +77,7 @@ const lastname = "Saavedra";
 const completename = name + lastname;
 const nick = "statick";
 
-console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nick + ".");
+console.log("Mi nombre es " + completename + ", pero prefiero que me digas " + nick + ".");
 ````
 ````
 function nombreCompleto(name, lastName) {
