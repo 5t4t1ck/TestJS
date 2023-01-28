@@ -1,6 +1,5 @@
 
 # Variables y operaciones
-
 ## Responde las siguientes preguntas:
 
 1. ¿Qué es una variable y para qué sirve?
@@ -54,7 +53,6 @@ let saldoIgual = dineroAhorrado - deudas;
 ````
 
 # Funciones.
-
 ## Responde las siguientes preguntas:
 
 1. ¿Qué es una función?
@@ -169,8 +167,8 @@ if !(tipoDeSuscripcion == "Free") || !(tipoDeSuscripcion == "Basic") || !(tipoDe
 
 ````
 
-
-# Responde las siguientes preguntas
+# Ciclos
+## Responde las siguientes preguntas
 
 1. ¿Qué es un ciclo?
 
@@ -225,14 +223,56 @@ while (respuesta != "4") {
 }
 ````
 
-Listas
-1. Responde las siguientes preguntas:
+# Listas
+# Responde las siguientes preguntas:
 
-    ¿Qué es un array?
-    ¿Qué es un objeto?
-    ¿Cuándo es mejor usar objetos o arrays?
-    ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+1. ¿Qué es un array?
 
-2. Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+* Es una lista de elementos.
+
+````
+const array = [1, "Hola", false, {nombre: "Diego", edad: 34}];
+````
+2. ¿Qué es un objeto?
+
+* Es una lista de elementos, pero cada elemento tiene un nombre clave.
+
+````
+const obj = {
+    nombre: "Diego",
+    edad: 34,
+    comidaFavorita: ["Pollo frito","vegetales"],
+};
+````
+
+3. ¿Cuándo es mejor usar objetos o arrays?
+
+Arrays cuando lo que haremos en un elemento es lo mismo que en todos los demás (esta regla se puede incumplir), mientras que un objeto cuando los nombres de cada elemento son importantes para nuestro algoritmo.
+
+4. ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+
+Sí, los arrays pueden guardar objetos, y los objetos pueden guardar arrays entre sus propiedades.
+
+5. Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+````
+function imprimirElementoPorElemento(arr){
+    const firstElement = arr.find(element => element != undefined);
+    console.log(firstElement)
+}
+````
 3. Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+````
+function imprimirElementoPorElemento(arr){
+    for (let i = 0; i < arr.length; i++){
+        console.log(arr[i]);
+    }
+}
+````
 4. Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+
+function imprimirElementPorElementoObjeto(obj){
+    const arr = Object.values(obj);
+    for (let i = 0; i< arr.length; i++){
+        console.log(arr[i]);
+    }
+}
